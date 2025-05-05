@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,45 +74,6 @@
                                         <option value="es">Spanish (Español)</option>
                                         <option value="it">Italian (Italiano)</option>
                                     </select>
-                                </div>
-                                
-                                <div class="translator-controls mb-3">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <label for="text-input">Text to Convert</label>
-                                        <div class="translator-buttons">
-                                            <div class="input-group">
-                                                <select id="translate-from" class="form-select form-select-sm">
-                                                    <option value="auto">Detect Language</option>
-                                                    <option value="en">English</option>
-                                                    <option value="hu">Hungarian</option>
-                                                    <option value="de">German</option>
-                                                    <option value="fr">French</option>
-                                                    <option value="es">Spanish</option>
-                                                    <option value="it">Italian</option>
-                                                    <option value="pl">Polish</option>
-                                                    <option value="ru">Russian</option>
-                                                    <option value="zh">Chinese</option>
-                                                    <option value="ja">Japanese</option>
-                                                </select>
-                                                <span class="input-group-text"><i class="fas fa-arrow-right"></i></span>
-                                                <select id="translate-to" class="form-select form-select-sm">
-                                                    <option value="en" selected>English</option>
-                                                    <option value="hu">Hungarian</option>
-                                                    <option value="de">German</option>
-                                                    <option value="fr">French</option>
-                                                    <option value="es">Spanish</option>
-                                                    <option value="it">Italian</option>
-                                                    <option value="pl">Polish</option>
-                                                    <option value="ru">Russian</option>
-                                                    <option value="zh">Chinese</option>
-                                                    <option value="ja">Japanese</option>
-                                                </select>
-                                                <button id="translate-btn" class="btn btn-primary btn-sm">
-                                                    <i class="fas fa-language"></i> Translate
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <div class="form-group">
@@ -306,34 +268,6 @@
             </div>
         </footer>
     </div>
-
-    <div class="translator-widget">
-        <button class="translator-toggle" id="translator-toggle">
-            <i class="fas fa-language"></i>
-        </button>
-        <div class="translator-dropdown" id="translator-dropdown">
-            <div class="translator-header">
-                <h4>Translate Page</h4>
-                <button class="translator-close" id="translator-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="translator-languages">
-                <button class="translator-lang-btn" data-lang="en">English</button>
-                <button class="translator-lang-btn" data-lang="hu">Magyar</button>
-                <button class="translator-lang-btn" data-lang="de">Deutsch</button>
-                <button class="translator-lang-btn" data-lang="fr">Français</button>
-                <button class="translator-lang-btn" data-lang="es">Español</button>
-                <button class="translator-lang-btn" data-lang="it">Italiano</button>
-                <button class="translator-lang-btn" data-lang="pl">Polski</button>
-                <button class="translator-lang-btn" data-lang="ru">Русский</button>
-                <button class="translator-lang-btn" data-lang="zh">中文</button>
-                <button class="translator-lang-btn" data-lang="ja">日本語</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="google_translate_element" style="display: none;"></div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>

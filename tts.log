@@ -621,3 +621,15 @@ NameError: name 'request_count_exceeds_limit' is not defined
 2025-04-15 13:44:35,625 - tts - INFO - Successfully generated audio at /static/audio/tts_20250415134435_113972d6.mp3
 2025-04-15 13:44:35,626 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 13:44:35] "POST /speak HTTP/1.1" 200 -
 2025-04-15 13:44:35,691 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 13:44:35] "[35m[1mGET /static/audio/tts_20250415134435_113972d6.mp3 HTTP/1.1[0m" 206 -
+2025-05-05 22:17:26,847 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-05 22:17:26,848 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-05 22:17:26,852 - werkzeug - INFO -  * Restarting with stat
+2025-05-05 22:17:28,938 - werkzeug - WARNING -  * Debugger is active!
+2025-05-05 22:17:28,946 - werkzeug - INFO -  * Debugger PIN: 121-522-498
+2025-05-05 22:17:30,067 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 22:17:30] "GET / HTTP/1.1" 200 -
+2025-05-05 22:17:30,310 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 22:17:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-05 22:17:30,384 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 22:17:30] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-05-05 22:17:31,116 - app - WARNING - 404 error: /favicon.ico
+2025-05-05 22:17:31,198 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 22:17:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-05 22:17:31,266 - werkzeug - INFO - 127.0.0.1 - - [05/May/2025 22:17:31] "GET / HTTP/1.1" 200 -
