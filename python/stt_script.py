@@ -1,4 +1,3 @@
-# Python Speech-to-Text Module
 
 import speech_recognition as sr
 import os
