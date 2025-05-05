@@ -6,13 +6,7 @@ import html
 import time
 from python.tts_script import text_to_speech
 from python.stt_script import recognize_speech_from_audio
-# Replace the original import
-# from googletrans import Translator
-
-# With this import instead
 from deep_translator import GoogleTranslator
-
-# Make sure you have requests installed (pip install requests)
 import requests
 
 # Set up logging
