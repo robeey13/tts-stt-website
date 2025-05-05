@@ -44,24 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Character counter for text input
-    const textInput = document.getElementById('text');
-    const charCounter = document.getElementById('char-count');
-    
-    if (textInput && charCounter) {
-        textInput.addEventListener('input', () => {
-            const count = textInput.value.length;
-            charCounter.textContent = count;
-            
-            // Optional: Add warning class if approaching limit
-            if (count > 450) {
-                charCounter.classList.add('warning');
-            } else {
-                charCounter.classList.remove('warning');
-            }
-        });
-    }
-    
     // File upload functionality
     const fileInput = document.getElementById('audio-file');
     const fileDropArea = document.querySelector('.file-drop-area');
