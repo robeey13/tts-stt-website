@@ -96,17 +96,10 @@ def speak():
             return "Too many requests, please try again later", 429
             
         # Rest of your code...
-        voice = request.form.get('voice', 'default')
+        voice_type = request.form.get('voice_type', 'normal')
         quality = request.form.get('quality', 'standard')
         
         print(f"Received quality parameter: {quality}")  # Debug output
-        
-        # Example with different TTS libraries:
-        if quality == "high":
-            # Set higher sample rate, bitrate, etc.
-            sample_rate = 24000  # or 44100 for even higher
-        else:
-            sample_rate = 16000  # standard quality
         
         language = request.form.get('language', 'en')
         
@@ -114,8 +107,8 @@ def speak():
             logger.warning("Empty text received in /speak endpoint")
             return "No text provided", 400
         
-        logger.info(f"Converting text to speech: language={language}, text_length={len(text)}, voice={voice}, quality={quality}")
-        audio_path = text_to_speech(text, language, sample_rate=sample_rate, voice=voice, quality=quality)
+        logger.info(f"Converting text to speech: language={language}, text_length={len(text)}, voice_type={voice_type}, quality={quality}")
+        audio_path = text_to_speech(text, language, voice_type=voice_type, quality=quality)
         
         if not audio_path:
             logger.error("Failed to generate audio")
